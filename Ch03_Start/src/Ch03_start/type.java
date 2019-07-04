@@ -2,7 +2,12 @@ package Ch03_start;
 
 public class type {
 
+	static final int KK = 100; //상수 고정된 값 변화하지않는다.
+	
 	public static void main(String[] args) {
+		
+		System.out.println(type.KK);
+		
 		
 		byte by1 = 127; //-128~127
 		System.out.println(by1);
@@ -43,7 +48,37 @@ public class type {
 		
 		String c1 = "dfdfd";
 		System.out.println(c1);
-	
+		
+		int i_go = (int) 128l;
+		i_go = 128;
+		
+		if(i_go < Byte.MIN_VALUE || i_go > Byte.MAX_VALUE) {
+			System.out.println("바이트 타입으로 변환할 수 없습니다.");
+		}
+		else {
+			byte bb = (byte) i_go;
+			System.out.println(bb);
+			
+		}
+		
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.parseInt("200"));
+		//int ab = Integer.parseInt("1925837893748923471298347298567213894");
+		int ab = Integer.parseInt("33");
+		System.out.println(ab);
+		
+		
+		int intValue = 10;
+		double doubleValue = 5.5;
+		
+		double result = intValue + doubleValue;
+		
+		System.out.println(result);
+		
+		
 	}
 
+	
+	
+	
 }
